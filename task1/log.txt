@@ -1,0 +1,12 @@
+$ git log
+commit bc0ceef88e53aa2ad1592d37a1e7db8a3526db19 (HEAD -> master)
+Author: PashaFedyushkin <pashafedyushkin@yandex.by>
+Date:   Tue Apr 20 00:05:00 2021 +0300
+
+    add status.txt
+
+commit ef4ce2986c3e647633f6936b4dcbc3d7d5703480
+Author: PashaFedyushkin <pashafedyushkin@yandex.by>
+Date:   Mon Apr 19 23:52:55 2021 +0300
+
+    add .gitignore
