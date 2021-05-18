@@ -12,13 +12,6 @@ import java.io.PrintWriter;
 public class GetPageTextServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html");
-        BufferedReader br = new BufferedReader(new FileReader("F:\\Учебная практика\\Servlets\\src\\main\\webapp\\WEB-INF\\page.html"));
-        PrintWriter printWriter = resp.getWriter();
-        String str;
-        while ((str = br.readLine()) != null) {
-            printWriter.write(str);
-        }
-        printWriter.close();
+        getServletContext().getRequestDispatcher("/page.html").forward(req, resp);
     }
 }
